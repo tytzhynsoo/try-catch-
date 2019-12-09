@@ -1,0 +1,11 @@
+let add = (a, b) => {
+        if (a < 0) {
+            throw Error("WRONG!")
+        }
+        return a + b;
+    }
+    try {
+       console.log (add(-1, 2));
+    } catch(e) {
+      console.log("Can't execute calculate : because 'a' is less than 0")
+    }
